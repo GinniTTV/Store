@@ -1,0 +1,35 @@
+[
+    {
+      "id": 1,
+      "name": "Blue Eyes White Dragon",
+      "author": "Yu-Gi-Oh!",
+      "price": 250,
+      "img": "https://m.media-amazon.com/images/I/51gyfAxmjWL._AC_SL1200_.jpg",
+      "quanty": 1
+    },
+    {
+      "id": 2,
+      "name": "The Subterraneans",
+      "author": "Jack Kerouac",
+      "price": 20,
+      "img": "https://imgs.search.brave.com/PG6VRGVRdd1tat50p4zbkf4eZejQVmLSXnyikv6sZfQ/rs:fit:346:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5z/eGVESlRoNnNFWDZk/VXhhcjJnTkNnSGFL/SiZwaWQ9QXBp",
+      "quanty": 1
+    },
+  
+    {
+      "id": 3,
+      "name": "Indian Journals",
+      "author": "Allen Ginsberg",
+      "price": 27,
+      "img": "https://imgs.search.brave.com/PG6VRGVRdd1tat50p4zbkf4eZejQVmLSXnyikv6sZfQ/rs:fit:346:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5z/eGVESlRoNnNFWDZk/VXhhcjJnTkNnSGFL/SiZwaWQ9QXBp",
+      "quanty": 1
+    },
+    {
+      "id": 4,
+      "name": "Iron Horse",
+      "author": "Allen Ginsberg",
+      "price": 18,
+      "img": "https://imgs.search.brave.com/PG6VRGVRdd1tat50p4zbkf4eZejQVmLSXnyikv6sZfQ/rs:fit:346:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5z/eGVESlRoNnNFWDZk/VXhhcjJnTkNnSGFL/SiZwaWQ9QXBp",
+      "quanty": 1
+    }
+  ]

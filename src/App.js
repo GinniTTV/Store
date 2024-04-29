@@ -1,0 +1,22 @@
+import './App.css';
+import Home from './Pages/Home/Home';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import CartContent from './components/CartContent/CartContent';
+import { DataProvider } from './Context/DataContext'; // Importa el proveedor de contexto
+
+function App() {
+  return (
+    <BrowserRouter>
+      <DataProvider>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/cart" element={<CartContent />} />
+        </Routes>
+      </DataProvider>
+    </BrowserRouter>
+  );
+}
+
+export default App;
+
+
