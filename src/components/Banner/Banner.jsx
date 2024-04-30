@@ -4,8 +4,8 @@ const Banner = () => {
   return (
     <div className="banner">
         <div className="banner-container">
-            <h1>Toys Shop</h1>
-            <p>The best place to find you Toys</p>
+            <h1>Tienda</h1>
+            <p>El mejor lugar para encontrar tus juguetes</p>
         </div>
 
      </div>   

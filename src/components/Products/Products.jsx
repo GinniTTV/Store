@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { DataContext } from '../../Context/DataContext';
+import '../Products/Products.scss';
 
 const Products = () => {
     const { data } = useContext(DataContext);

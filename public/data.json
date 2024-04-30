@@ -2,34 +2,93 @@
     {
       "id": 1,
       "name": "Blue Eyes White Dragon",
-      "author": "Yu-Gi-Oh!",
+      "marca": "Yu-Gi-Oh!",
       "price": 250,
-      "img": "https://www.global-freaks.com/238645-home_default/yu-gi-oh-gx-elemental-hero-flame-wingman-wake-up-your-memories-ichibansho-bandai.jpg",
+      "img": "https://store.crunchyroll.com/dw/image/v2/BDGC_PRD/on/demandware.static/-/Sites-crunchyroll-master-catalog/default/dwfa80c8a4/images/4983164893687_yu-gi-oh-duel-monsters-blue-eyes-white-dragon-prize-figure_1.jpg?sw=200&sh=200&sm=fit&q=100",
       "quanty": 1
     },
     {
       "id": 2,
-      "name": "The Subterraneans",
-      "author": "Jack Kerouac",
-      "price": 20,
-      "img": "https://www.global-freaks.com/131679-home_default/yu-gi-oh-duel-monsters-blue-eyes-white-dragon-holographic-edition-art-works-monsters-megahouse.jpg",
+      "name": "Dark Magician",
+      "marca": "Yu-Gi-Oh!",
+      "price": 150,
+      "img": "https://d3fa68hw0m2vcc.cloudfront.net/d9f/254702918.jpeg",
       "quanty": 1
     },
   
     {
       "id": 3,
       "name": "Indian Journals",
-      "author": "Allen Ginsberg",
+      "marca": "Allen Ginsberg",
       "price": 27,
-      "img": "https://imgs.search.brave.com/PG6VRGVRdd1tat50p4zbkf4eZejQVmLSXnyikv6sZfQ/rs:fit:346:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5z/eGVESlRoNnNFWDZk/VXhhcjJnTkNnSGFL/SiZwaWQ9QXBp",
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81mkIehOztL._AC_UL200_SR200,200_.jpg",
       "quanty": 1
     },
     {
       "id": 4,
       "name": "Iron Horse",
-      "author": "Allen Ginsberg",
+      "marca": "Allen Ginsberg",
       "price": 18,
-      "img": "https://imgs.search.brave.com/PG6VRGVRdd1tat50p4zbkf4eZejQVmLSXnyikv6sZfQ/rs:fit:346:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5z/eGVESlRoNnNFWDZk/VXhhcjJnTkNnSGFL/SiZwaWQ9QXBp",
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71hNVK-BOaL._AC_UL200_SR200,200_.jpg",
+      "quanty": 1
+    },
+
+    {
+      "id": 5,
+      "name": "Iron Horse",
+      "marca": "Allen Ginsberg",
+      "price": 18,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71hNVK-BOaL._AC_UL200_SR200,200_.jpg",
+      "quanty": 1
+    },
+
+    {
+      "id": 6,
+      "name": "Iron Horse",
+      "marca": "Allen Ginsberg",
+      "price": 18,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71hNVK-BOaL._AC_UL200_SR200,200_.jpg",
+      "quanty": 1
+    },
+
+    {
+      "id": 7,
+      "name": "Iron Horse",
+      "marca": "Allen Ginsberg",
+      "price": 18,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71hNVK-BOaL._AC_UL200_SR200,200_.jpg",
+      "quanty": 1
+    },
+
+    {
+      "id": 8,
+      "name": "Iron Horse",
+      "marca": "Allen Ginsberg",
+      "price": 18,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71hNVK-BOaL._AC_UL200_SR200,200_.jpg",
+      "quanty": 1
+    },
+
+    {
+      "id": 9,
+      "name": "Iron Horse",
+      "marca": "Allen Ginsberg",
+      "price": 18,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71hNVK-BOaL._AC_UL200_SR200,200_.jpg",
+      "quanty": 1
+    },
+
+    {
+      "id": 10,
+      "name": "Iron Horse",
+      "marca": "Allen Ginsberg",
+      "price": 18,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71hNVK-BOaL._AC_UL200_SR200,200_.jpg",
       "quanty": 1
     }
-  ]
+
+]   
+
+
+  
+  

@@ -1,66 +1,70 @@
-// Estilos para el contenedor de las cards
-.Product-card-container {
-    display: flex; // Establece el contenedor como un flexbox
-    justify-content: center; // Centra horizontalmente las cards
-    flex-wrap: wrap; // Permite que las cards se envuelvan en filas si no caben en una línea
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
-    .card {
-        width: 83.1%; // Ancho de cada card
-        margin: 10px; // Espacio entre las cards
-        padding: 10px;
-        border: 1px solid #ccc;
+.card {
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.1s ease-in-out;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    img {
+        width: 100%;
+        height: auto;
         border-radius: 5px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease-in-out;
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    h4 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: #007bff;
+        margin-bottom: 5px;
+    }
+
+    button {
+        background-color: #28a745;
+        color: #fff;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
 
         &:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .card-image {
-            max-width: 100%; // Establece un ancho máximo del 100% para que la imagen se ajuste al contenedor
-            height: auto; // Permite que la altura se ajuste automáticamente manteniendo la proporción
-            border-radius: 5px;
-            margin-bottom: 10px;
-        }
-
-        .card-title {
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-
-        .card-description {
-            font-size: 1rem;
-            margin-bottom: 10px;
-        }
-
-        .card-price {
-            font-size: 1.1rem;
-            font-weight: bold;
-            color: #007bff;
-            margin-bottom: 5px;
-        }
-
-        .card-age {
-            font-size: 0.9rem;
-            color: #666;
-            margin-bottom: 10px;
-        }
-
-        .add-button {
-            background-color: #28a745;
-            color: #fff;
-            border: none;
-            padding: 8px 16px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-
-            &:hover {
-                background-color: #218838;
-            }
+            background-color: #218838;
         }
     }
 }
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
