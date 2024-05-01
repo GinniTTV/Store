@@ -9,7 +9,7 @@ const Home = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch('/data.json'); // La ruta debe ser relativa al servidor de desarrollo o producción
+            const response = await fetch('/data.json'); // La ruta debe ser relativa al servidor de desarrollo
             const jsonData = await response.json();
             setData(jsonData);
         };
@@ -29,3 +29,4 @@ const Home = () => {
 };
 
 export default Home;
+
