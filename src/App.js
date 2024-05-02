@@ -7,7 +7,6 @@ import Contacto from './Pages/Contacto/contacto';
 import Nosotros from './Pages/Nosotros/Nosotros';
 import CartContent from './components/CartContent/CartContent';
 import { DataProvider } from './Context/DataContext';
-
 function App() {
   return (
     <div>

@@ -1,25 +1,28 @@
-// Nosotros.jsx
 import React from 'react';
 import './Nosotros.scss';
 
 const Nosotros = () => {
   return (
-    <div className="nosotros">
-      <div className="nosotros-header">
-        <h1 className="title">Quiénes Somos</h1>
-        <p className="subtitle">¡Bienvenidos a Juguetería Cósmica!</p>
-      </div>
-      <div className="nosotros-content">
-        <p className="text">
-          Somos una tienda especializada en juguetes mágicos y divertidos para niños de todas las edades. En Juguetería Cósmica, creemos en la importancia del juego para el desarrollo y la diversión de los pequeños exploradores del universo.
-        </p>
-        <p className="text">
-          Nuestro objetivo es ofrecer una amplia variedad de juguetes creativos, educativos y emocionantes que estimulen la imaginación y fomenten el aprendizaje mientras los niños se divierten explorando el cosmos de la diversión.
-        </p>
-        <p className="text">
-          ¡Únete a nosotros en esta aventura intergaláctica llena de risas, descubrimientos y juegos emocionantes para todos!
-        </p>
-      </div>
+    <div>
+      <h1>Nosotros</h1>
+      <main className="main-container">
+        <div className="nosotros-container">
+          <div className="d-center">
+            <h2>¡Bienvenidos a Juguetería Cósmica!</h2>
+            <h3>Donde los sueños se vuelven realidad</h3>
+          </div>
+          <div className="section-container align-center">
+            <p>
+              En Juguetería Cósmica, creemos en la magia de la infancia. Nuestro objetivo es crear un mundo lleno de alegría, diversión y aprendizaje para niños y niñas de todas las edades. Cada juguete que ofrecemos está diseñado con amor y cuidado para inspirar la imaginación y fomentar el juego creativo.
+            </p>
+          </div>
+          <div className="section-container align-center">
+            <p>
+              Nos apasiona brindar experiencias únicas a nuestros clientes. Desde juguetes clásicos hasta las últimas novedades, nuestra colección es una celebración de la diversidad y la innovación en el mundo del juego. Estamos comprometidos a proporcionar la mejor calidad y el mejor servicio, para que cada experiencia con Juguetería Cósmica sea inolvidable.
+            </p>
+          </div>
+        </div>
+      </main>
     </div>
   );
 };

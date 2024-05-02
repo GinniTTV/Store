@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import CartModal from '../CartModal/CartModal'; // Importa el componente del modal del carrito
+import CartModal from '../CartModal/CartModal';
 import './NavBar.scss';
 
 const NavBar = () => {
@@ -21,6 +21,7 @@ const NavBar = () => {
                 <li><Link to="/" className='nav-link'>Inicio</Link></li>
                 <li><Link to="/alta" className='nav-link'>Alta</Link></li>
                 <li><Link to="/contacto" className='nav-link'>Contacto</Link></li>
+                <li><Link to="/nosotros" className='nav-link'>Nosotros</Link></li>
             </ul>
             <button className='cart-link' onClick={openModal}>🛒</button>
             {modalOpen && <CartModal closeModal={closeModal} />}
@@ -29,6 +30,7 @@ const NavBar = () => {
 };
 
 export default NavBar;
+
 
 
 
