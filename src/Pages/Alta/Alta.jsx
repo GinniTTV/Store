@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import FormAltaProductos from '../../components/FormAlta/AltaProducts';
+import FormAltaProductos from '../../components/AltaProducts';
 import './Alta.scss';
 
 const AltaProducto = () => {

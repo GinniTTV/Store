@@ -8,8 +8,8 @@ import {
   validateAge,
   validateDescription,
   validatePhoto,
-} from '../../utils/validations';
-import '../../Pages/Alta/Alta.scss';
+} from '../utils/alta.validations';
+import '../Pages/Alta/Alta.scss';
 
 const FormAltaProductos = ({ onSubmit }) => {
   const [formData, setFormData] = useState({

@@ -18,7 +18,7 @@
   
     {
       "id": 3,
-      "name": "Indian Journals",
+      "name": "kaiba",
       "marca": "Allen Ginsberg",
       "price": 27,
       "img": "https://images-na.ssl-images-amazon.com/images/I/81mkIehOztL._AC_UL200_SR200,200_.jpg",
@@ -26,7 +26,7 @@
     },
     {
       "id": 4,
-      "name": "Iron Horse",
+      "name": "bakura",
       "marca": "Allen Ginsberg",
       "price": 18,
       "img": "https://images-na.ssl-images-amazon.com/images/I/71hNVK-BOaL._AC_UL200_SR200,200_.jpg",
@@ -35,7 +35,7 @@
 
     {
       "id": 5,
-      "name": "Iron Horse",
+      "name": "marik",
       "marca": "Allen Ginsberg",
       "price": 18,
       "img": "https://images-na.ssl-images-amazon.com/images/I/71hNVK-BOaL._AC_UL200_SR200,200_.jpg",
@@ -44,7 +44,7 @@
 
     {
       "id": 6,
-      "name": "Iron Horse",
+      "name": "yugi",
       "marca": "Allen Ginsberg",
       "price": 18,
       "img": "https://images-na.ssl-images-amazon.com/images/I/71hNVK-BOaL._AC_UL200_SR200,200_.jpg",
@@ -53,7 +53,7 @@
 
     {
       "id": 7,
-      "name": "Iron Horse",
+      "name": "pegasus",
       "marca": "Allen Ginsberg",
       "price": 18,
       "img": "https://images-na.ssl-images-amazon.com/images/I/71hNVK-BOaL._AC_UL200_SR200,200_.jpg",
@@ -62,7 +62,7 @@
 
     {
       "id": 8,
-      "name": "Iron Horse",
+      "name": "mokuba",
       "marca": "Allen Ginsberg",
       "price": 18,
       "img": "https://images-na.ssl-images-amazon.com/images/I/71hNVK-BOaL._AC_UL200_SR200,200_.jpg",
@@ -71,7 +71,7 @@
 
     {
       "id": 9,
-      "name": "Iron Horse",
+      "name": "mai",
       "marca": "Allen Ginsberg",
       "price": 18,
       "img": "https://images-na.ssl-images-amazon.com/images/I/71hNVK-BOaL._AC_UL200_SR200,200_.jpg",
@@ -80,7 +80,7 @@
 
     {
       "id": 10,
-      "name": "Iron Horse",
+      "name": "anzu",
       "marca": "Allen Ginsberg",
       "price": 18,
       "img": "https://images-na.ssl-images-amazon.com/images/I/71hNVK-BOaL._AC_UL200_SR200,200_.jpg",

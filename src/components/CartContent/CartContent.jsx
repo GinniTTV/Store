@@ -1,23 +1,35 @@
-import React, { useContext } from 'react';
+// CartContent.jsx
+import React, { useContext, useState } from 'react';
 import { DataContext } from '../../Context/DataContext';
-
-import CartElements from './CartElements';
-import CartTotal from './CartTotal';
+import './CartContent.scss';
+import CartModal from '../CartModal/CartModal'; // Importa el componente del modal
 
 const CartContent = () => {
-  const { cart } = useContext(DataContext);
+    const { cart } = useContext(DataContext);
+    const [modalOpen, setModalOpen] = useState(false);
 
-  return cart.length > 0 ? (
-     <>
-       <CartElements />
-       <CartTotal />
-     </>
-  ) : (
+    const openModal = () => {
+        setModalOpen(true);
+    };
 
-    <h2 className='cart-message-center'>Your cart is empty</h2>
+    const closeModal = () => {
+        setModalOpen(false);
+    };
 
-  );
- 
+    const calculateTotal = () => {
+        return cart.reduce((total, product) => total + product.price * product.quantity, 0);
+    };
+
+    return (
+        <>
+            <div className='cart-container' onClick={openModal}>
+                <span className='cart-count'>{cart.length}</span>
+            </div>
+            {modalOpen && <CartModal closeModal={closeModal} cart={cart} total={calculateTotal()} />} {/* Renderiza el modal si modalOpen es true */}
+        </>
+    );
 };
 
-export default CartContent
+export default CartContent;
+
+
