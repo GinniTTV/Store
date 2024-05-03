@@ -1,34 +1,27 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import { DataContext } from '../../Context/DataContext';
 import './CartModal.scss';
 import CartTotal from '../CartContent/CartTotal';
-import Delivery from './Delivery';
 
 const CartModal = ({ closeModal }) => {
     const { cart, setCart } = useContext(DataContext);
-    const [totalWithDelivery, setTotalWithDelivery] = useState(0);
-
-    const handleCalculateTotal = (total) => {
-        setTotalWithDelivery(total);
-    };
-
-    const handlePurchase = () => {
-        // Simulación de procesamiento de pago
-        setTimeout(() => {
-            alert('Su pago ha sido procesado exitosamente!');
-            const trackingId = Math.floor(Math.random() * 1000);
-            alert(`Su ID de seguimiento es: ${trackingId}`);
-            setCart([]); // Limpiar el carrito después de la compra
-            closeModal();
-        }, 1000);
-    };
-
-    const handleClearCart = () => {
-        setCart([]);
-    };
 
     const handleRemoveItem = (id) => {
         const updatedCart = cart.filter((item) => item.id !== id);
+        setCart(updatedCart);
+    };
+
+    const handleAddQuantity = (id) => {
+        const updatedCart = cart.map((item) =>
+            item.id === id ? { ...item, quantity: item.quantity + 1 } : item
+        );
+        setCart(updatedCart);
+    };
+
+    const handleSubtractQuantity = (id) => {
+        const updatedCart = cart.map((item) =>
+            item.id === id ? { ...item, quantity: item.quantity - 1 } : item
+        ).filter(item => item.quantity > 0);
         setCart(updatedCart);
     };
 
@@ -44,16 +37,15 @@ const CartModal = ({ closeModal }) => {
                             <h3 className='name'>{product.name}</h3>
                             <h4 className='price'>{product.price}$</h4>
                             <p>Cantidad: {product.quantity}</p>
+                            <button onClick={() => handleAddQuantity(product.id)}>+</button>
+                            <button onClick={() => handleSubtractQuantity(product.id)}>-</button>
                             <button onClick={() => handleRemoveItem(product.id)}>Eliminar</button>
                         </div>
                     ))}
                 </div>
                 <div className="total">
-                    <CartTotal total={totalWithDelivery} />
+                    <CartTotal />
                 </div>
-                <Delivery onCalculateTotal={handleCalculateTotal} />
-                <button onClick={handlePurchase}>Pagar</button>
-                <button onClick={handleClearCart}>Limpiar Carrito</button>
                 <button onClick={closeModal}>Cerrar</button>
             </div>
         </div>
@@ -61,10 +53,3 @@ const CartModal = ({ closeModal }) => {
 };
 
 export default CartModal;
-
-
-
-
-
-
-

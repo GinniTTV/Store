@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import Banner from '../../components/Banner/Banner';
+import Banner from '../../layout/Banner';
 import Products from '../../components/Products/Products';
 import '../../components/Products/Products.scss';
 
