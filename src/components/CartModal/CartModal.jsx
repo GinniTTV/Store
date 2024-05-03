@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import { DataContext } from '../../Context/DataContext';
 import './CartModal.scss';
 import CartTotal from '../CartContent/CartTotal';
@@ -33,6 +33,13 @@ const CartModal = ({ closeModal }) => {
         }, 1000);
     };
 
+    useEffect(() => {
+        const modal = document.querySelector('.cart-modal');
+        if (modal) {
+            modal.classList.add('show'); // Añade la clase 'show' al modal al montar el componente
+        }
+    }, []);
+    
     return (
         <div className="cart-modal">
             <div className="modal-content">

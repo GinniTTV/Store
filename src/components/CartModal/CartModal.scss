@@ -9,17 +9,121 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0s 0.3s;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cart-modal.show {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0s;
 }
 
 .modal-content {
     background-color: #fefefe;
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
-    max-width: 80%;
-    max-height: 80%;
+    max-width: 60%;
+    max-height: 60%;
     overflow-y: auto;
     position: relative;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scrollbar-width: thin; /* Tamaño del scrollbar vertical */
+    scrollbar-color: #888 #ddd; /* Color del scrollbar vertical */
+}
+
+.cart-modal.show .modal-content {
+    transform: scale(1);
+    width: 100%;
+    height: 100%;
+}
+
+.cart-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+}
+
+.cart-item {
+    width: 120px; /* Ancho de cada elemento del carrito */
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cart-item:hover {
+    transform: translateY(-5px);
+}
+
+.cart-item img {
+    width: 80px; /* Ancho de la imagen */
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.name {
+    font-size: 1rem; /* Tamaño de la fuente del nombre */
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.price {
+    font-size: 0.9rem; /* Tamaño de la fuente del precio */
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.quantity-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px; /* Espacio entre el botón de eliminar y los botones de cantidad */
+}
+
+.quantity-buttons button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 6px 12px; /* Tamaño de los botones de cantidad */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 0.8rem; /* Tamaño de la fuente de los botones de cantidad */
+}
+
+.quantity-buttons button:hover {
+    background-color: #0056b3;
+}
+
+.pay-button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Espacio antes del botón de pagar */
+    font-size: 1rem; /* Tamaño de la fuente del botón de pagar */
+}
+
+.pay-button:hover {
+    background-color: #218838;
 }
 
 .close {
@@ -27,51 +131,5 @@
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
-
-.cart-items {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.cart-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.cart-item img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 5px;
-    margin-bottom: 5px;
-}
-
-.name,
-.price {
-    margin-top: 5px;
-    text-align: center;
-}
-
-.total {
-    margin-top: 20px;
-}
-
-.pay-button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.pay-button:hover {
-    background-color: #0056b3;
+    margin-top: 20px; /* Espacio antes del botón de cerrar */
 }
