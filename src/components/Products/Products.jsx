@@ -1,24 +1,17 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import { DataContext } from '../../Context/DataContext';
-import '../Products/Products.scss';
+import './Products.scss';
 
 const Products = () => {
     const { data, cart, setCart } = useContext(DataContext);
-    const [message, setMessage] = useState('');
 
-    const buyProducts = (product) => {
-        const updatedCart = [...cart];
-        const existingItem = updatedCart.find(item => item.id === product.id);
+    const handleAddToCart = (product) => {
+        const existingItem = cart.find((item) => item.id === product.id);
         if (existingItem) {
-            existingItem.quantity += 1;
+            alert('Este producto ya está en el carrito');
         } else {
-            updatedCart.push({ ...product, quantity: 1 });
+            setCart([...cart, { ...product, quantity: 1 }]);
         }
-        setCart(updatedCart);
-        setMessage(`"${product.name}" has been added to the cart!`);
-        setTimeout(() => {
-            setMessage('');
-        }, 3000); // Hide message after 3 seconds
     };
 
     return (
@@ -28,14 +21,14 @@ const Products = () => {
                     <img src={product.img} alt='img-product-card' />
                     <h3>{product.name}</h3>
                     <h4>{product.price}$</h4>
-                    <button onClick={() => buyProducts(product)}>Buy</button>
+                    <button onClick={() => handleAddToCart(product)}>Comprar</button>
                 </div>
             ))}
-            {message && <div className="message">{message}</div>}
         </div>
     );
 };
 
 export default Products;
+
 
 

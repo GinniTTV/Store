@@ -1,28 +1,31 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { DataContext } from '../../Context/DataContext';
 import './CartModal.scss';
 import CartTotal from '../CartContent/CartTotal';
 
 const CartModal = ({ closeModal }) => {
     const { cart, setCart } = useContext(DataContext);
+    const [total, setTotal] = useState(0);
 
     const handleRemoveItem = (id) => {
         const updatedCart = cart.filter((item) => item.id !== id);
         setCart(updatedCart);
+        updateTotal(updatedCart);
     };
 
-    const handleAddQuantity = (id) => {
-        const updatedCart = cart.map((item) =>
-            item.id === id ? { ...item, quantity: item.quantity + 1 } : item
-        );
-        setCart(updatedCart);
+    const updateTotal = (updatedCart) => {
+        const totalAmount = updatedCart.reduce((acc, item) => acc + item.price * item.quantity, 0);
+        setTotal(totalAmount);
     };
 
-    const handleSubtractQuantity = (id) => {
-        const updatedCart = cart.map((item) =>
-            item.id === id ? { ...item, quantity: item.quantity - 1 } : item
-        ).filter(item => item.quantity > 0);
-        setCart(updatedCart);
+    const handlePurchase = () => {
+        // Simulación de procesamiento de pago
+        setTimeout(() => {
+            alert('¡Su pago ha sido procesado exitosamente!');
+            setCart([]); // Limpiar el carrito después de la compra
+            closeModal();
+            window.location.reload(); // Refrescar la página para actualizar el carrito
+        }, 1000);
     };
 
     return (
@@ -37,15 +40,12 @@ const CartModal = ({ closeModal }) => {
                             <h3 className='name'>{product.name}</h3>
                             <h4 className='price'>{product.price}$</h4>
                             <p>Cantidad: {product.quantity}</p>
-                            <button onClick={() => handleAddQuantity(product.id)}>+</button>
-                            <button onClick={() => handleSubtractQuantity(product.id)}>-</button>
                             <button onClick={() => handleRemoveItem(product.id)}>Eliminar</button>
                         </div>
                     ))}
                 </div>
-                <div className="total">
-                    <CartTotal />
-                </div>
+                <CartTotal total={total} /> {/* Aquí se usa el componente CartTotal */}
+                <button onClick={handlePurchase}>Pagar</button>
                 <button onClick={closeModal}>Cerrar</button>
             </div>
         </div>
@@ -53,3 +53,6 @@ const CartModal = ({ closeModal }) => {
 };
 
 export default CartModal;
+
+
+
