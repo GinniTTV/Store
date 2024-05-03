@@ -19,6 +19,11 @@ const CartModal = ({ closeModal }) => {
     };
 
     const handlePurchase = () => {
+        if (cart.length === 0) {
+            alert('El carrito de compras está vacío. Añade algunos productos antes de realizar la compra.');
+            return;
+        }
+
         // Simulación de procesamiento de pago
         setTimeout(() => {
             alert('¡Su pago ha sido procesado exitosamente!');
@@ -32,21 +37,27 @@ const CartModal = ({ closeModal }) => {
         <div className="cart-modal">
             <div className="modal-content">
                 <span className="close" onClick={closeModal}>&times;</span>
-                <h2>Cart Items</h2>
-                <div className="cart-items">
-                    {cart.map((product) => (
-                        <div key={product.id} className='cart-item'>
-                            <img src={product.img} alt='product-card' />
-                            <h3 className='name'>{product.name}</h3>
-                            <h4 className='price'>{product.price}$</h4>
-                            <p>Cantidad: {product.quantity}</p>
-                            <button onClick={() => handleRemoveItem(product.id)}>Eliminar</button>
+                {cart.length > 0 ? (
+                    <>
+                        <h2>Artículos del carrito</h2>
+                        <div className="cart-items">
+                            {cart.map((product) => (
+                                <div key={product.id} className='cart-item'>
+                                    <img src={product.img} alt='product-card' />
+                                    <h3 className='name'>{product.name}</h3>
+                                    <h4 className='price'>{product.price}$</h4>
+                                    <p>Cantidad: {product.quantity}</p>
+                                    <button onClick={() => handleRemoveItem(product.id)}>Eliminar</button>
+                                </div>
+                            ))}
                         </div>
-                    ))}
-                </div>
-                <CartTotal total={total} /> {/* Aquí se usa el componente CartTotal */}
-                <button onClick={handlePurchase}>Pagar</button>
-                <button onClick={closeModal}>Cerrar</button>
+                        <CartTotal total={total} /> {/* Aquí se usa el componente CartTotal */}
+                        <button onClick={handlePurchase}>Pagar</button>
+                        <button onClick={closeModal}>Cerrar</button>
+                    </>
+                ) : (
+                    <h2>Carrito de compras vacío</h2>
+                )}
             </div>
         </div>
     );
