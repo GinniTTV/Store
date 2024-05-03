@@ -80,6 +80,10 @@
     font-size: 1rem; /* Tamaño de la fuente del nombre */
     font-weight: bold;
     margin-bottom: 5px;
+    text-align: center; /* Alinear el texto al centro */
+    max-width: 100%; /* Ancho máximo del texto */
+    overflow: hidden; /* Ocultar el texto que exceda el ancho */
+    text-overflow: ellipsis; /* Mostrar puntos suspensivos para texto cortado */
 }
 
 .price {
@@ -111,19 +115,19 @@
 }
 
 .pay-button {
-    background-color: #28a745;
+    background-color: #28a745; /* Color de fondo del botón Pagar */
     color: #fff;
     border: none;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 20px; /* Borde redondeado del botón Pagar */
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-top: 20px; /* Espacio antes del botón de pagar */
-    font-size: 1rem; /* Tamaño de la fuente del botón de pagar */
+    margin-top: 20px; /* Espacio antes del botón Pagar */
+    font-size: 1rem; /* Tamaño de la fuente del botón Pagar */
 }
 
 .pay-button:hover {
-    background-color: #218838;
+    background-color: #218838; /* Color de fondo del botón Pagar al pasar el mouse */
 }
 
 .close {
@@ -131,5 +135,25 @@
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
-    margin-top: 20px; /* Espacio antes del botón de cerrar */
+    margin-top: 20px; /* Espacio antes del botón Cerrar */
+}
+
+.close:hover {
+    color: #777;
+}
+
+.cart-item button {
+    background-color: #dc3545; /* Color de fondo del botón Eliminar */
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 20px; /* Borde redondeado del botón Eliminar */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 0.8rem;
+    margin-top: 5px; /* Espacio antes del botón Eliminar */
+}
+
+.cart-item button:hover {
+    background-color: #c82333; /* Color de fondo del botón Eliminar al pasar el mouse */
 }

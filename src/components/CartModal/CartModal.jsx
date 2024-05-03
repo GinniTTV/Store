@@ -39,7 +39,7 @@ const CartModal = ({ closeModal }) => {
             modal.classList.add('show'); // Añade la clase 'show' al modal al montar el componente
         }
     }, []);
-    
+
     return (
         <div className="cart-modal">
             <div className="modal-content">
@@ -59,8 +59,9 @@ const CartModal = ({ closeModal }) => {
                             ))}
                         </div>
                         <CartTotal total={total} /> {/* Aquí se usa el componente CartTotal */}
-                        <button onClick={handlePurchase}>Pagar</button>
-                        <button onClick={closeModal}>Cerrar</button>
+                        <button className="pay-button" onClick={handlePurchase}>Pagar</button>
+                        <button className="close" onClick={closeModal}>Cerrar</button>
+
                     </>
                 ) : (
                     <h2>Carrito de compras vacío</h2>
