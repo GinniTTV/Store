@@ -14,6 +14,20 @@ const Products = () => {
         }
     };
 
+    const handleAddQuantity = (id) => {
+        const updatedCart = cart.map((item) =>
+            item.id === id ? { ...item, quantity: item.quantity + 1 } : item
+        );
+        setCart(updatedCart);
+    };
+
+    const handleSubtractQuantity = (id) => {
+        const updatedCart = cart.map((item) =>
+            item.id === id ? { ...item, quantity: item.quantity - 1 } : item
+        ).filter(item => item.quantity > 0);
+        setCart(updatedCart);
+    };
+
     return (
         <div className="product-list">
             {data.map((product) => (
@@ -22,6 +36,12 @@ const Products = () => {
                     <h3>{product.name}</h3>
                     <h4>{product.price}$</h4>
                     <button onClick={() => handleAddToCart(product)}>Comprar</button>
+                    {cart.some(item => item.id === product.id) ? (
+                        <div className="quantity-buttons">
+                            <button onClick={() => handleAddQuantity(product.id)}>+</button>
+                            <button onClick={() => handleSubtractQuantity(product.id)}>-</button>
+                        </div>
+                    ) : null}
                 </div>
             ))}
         </div>
@@ -29,6 +49,7 @@ const Products = () => {
 };
 
 export default Products;
+
 
 
 
