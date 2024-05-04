@@ -23,13 +23,17 @@ const NavBar = () => {
                 <li><Link to="/contacto" className='nav-link'>Contacto</Link></li>
                 <li><Link to="/nosotros" className='nav-link'>Nosotros</Link></li>
             </ul>
-            <button className='cart-link' onClick={openModal}>🛒</button>
+            <button className='cart-link' onClick={openModal}>
+            <img src={process.env.PUBLIC_URL + '/assets/Icons/add-cart-wv.png'} alt="Carrito de compras" />
+
+            </button>
             {modalOpen && <CartModal closeModal={closeModal} />}
         </nav>
     );
 };
 
 export default NavBar;
+
 
 
 

@@ -49,17 +49,27 @@
   color: #007bff;
 }
 
+// En tu archivo SCSS
 .cart-link {
-  font-size: 24px;
+  display: inline-flex; // Mostrar como elemento en línea y usar flexbox
+  align-items: center; // Centrar verticalmente los elementos
+  font-size: 28px;
   color: #333;
   text-decoration: none;
   transition: color 0.3s ease;
   margin-right: 5%; /* Mover el carrito hacia la izquierda */
+  padding: 0; // Eliminar el relleno para que el botón no tenga espacio adicional
+  border: none; // Eliminar el borde del botón
+  background: none; // Eliminar el fondo del botón
+  cursor: pointer; // Cambiar el cursor al pasar sobre el botón
 }
 
-.cart-link:hover {
-  color: #007bff;
+.cart-link img {
+  width: 35px; /* Tamaño deseado para el icono */
+  height: 35px; /* Tamaño deseado para el icono */
+  margin-right: 5px; /* Espacio entre el icono y el texto */
 }
+
 
 
 
