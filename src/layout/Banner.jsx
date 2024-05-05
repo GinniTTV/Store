@@ -1,17 +1,21 @@
+import React from 'react';
 import './Banner.scss';
 
 const Banner = () => {
   return (
     <div className="banner">
-        <div className="banner-container">
-            <h1>Tienda</h1>
-            <p>El mejor lugar para encontrar tus juguetes</p>
-        </div>
+      <video autoPlay loop muted playsInline>
+        <source src="/assets/icons/ToyLand.mp4" type="video/mp4" />
+        Tu navegador no admite videos HTML5.
+      </video>
+      <div className="banner-container">
+       
+      </div>
+    </div>
+  );
+};
 
-     </div>   
-        
+export default Banner;
 
-  )
-}
 
-export default Banner
+

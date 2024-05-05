@@ -1,32 +1,18 @@
-// Banner.scss
-
-// Banner.scss
-
 .banner {
-    background-image: url('./img/Banner.Rose.jpg');
-    background-size:auto;
-    background-position: center;
-    height: 100vh; // La altura ocupará toda la pantalla verticalmente
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-    .banner-container {
-      text-align: center;
-  
-      h1 {
-        color: #3c2680;
-        font-size: 45px;
-        margin-top: 50px;
-     
-      }
-  
-      p {
-        color: #3c2680;
-        font-size: 24px;
-        
-      }
-    }
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; // Oculta el desbordamiento para evitar problemas con el video
+
+  video {
+    
+    height: 150%;
+    object-fit: cover;
   }
-  
-  
+
+  .banner-container {
+    padding-bottom: 10vh; // Espacio adicional para las cartas
+    text-align: center;
+  }
+}
