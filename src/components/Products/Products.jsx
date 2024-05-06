@@ -30,22 +30,23 @@ const Products = () => {
 
     return (
         <div className="product-list">
-            {data.map((product) => (
-                <div className="card" key={product.id}>
-                    <img src={product.img} alt='img-product-card' />
-                    <h3>{product.name}</h3>
-                    <h4>{product.price}$</h4>
-                    <p>{product.description}</p> 
-                    <button onClick={() => handleAddToCart(product)}>Comprar</button>
-                    {cart.some(item => item.id === product.id) ? (
-                        <div className="quantity-buttons">
-                            <button onClick={() => handleAddQuantity(product.id)}>+</button>
-                            <button onClick={() => handleSubtractQuantity(product.id)}>-</button>
-                        </div>
-                    ) : null}
-                </div>
-            ))}
-        </div>
+        {data.map((product) => (
+            <div className="card" key={product.id}>
+                <img src={product.img} alt='img-product-card' />
+                <h3>{product.name}</h3>
+                <h4>{product.price}$</h4>
+                <p className="description">{product.description}</p> 
+                <button onClick={() => handleAddToCart(product)}>Comprar</button>
+                {cart.some(item => item.id === product.id) ? (
+                    <div className="quantity-buttons">
+                        <button onClick={() => handleAddQuantity(product.id)}>+</button>
+                        <button onClick={() => handleSubtractQuantity(product.id)}>-</button>
+                    </div>
+                ) : null}
+            </div>
+        ))}
+    </div>
+    
     );
 };
 

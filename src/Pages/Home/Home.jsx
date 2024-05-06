@@ -4,6 +4,7 @@ import Banner from '../../layout/Banner';
 import Products from '../../components/Products/Products';
 import '../../components/Products/Products.scss';
 
+
 const Home = () => {
     const [data, setData] = useState([]);
 
