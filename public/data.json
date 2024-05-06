@@ -5,8 +5,11 @@
       "marca": "Yu-Gi-Oh!",
       "price": 250,
       "img": "https://store.crunchyroll.com/dw/image/v2/BDGC_PRD/on/demandware.static/-/Sites-crunchyroll-master-catalog/default/dwfa80c8a4/images/4983164893687_yu-gi-oh-duel-monsters-blue-eyes-white-dragon-prize-figure_1.jpg?sw=200&sh=200&sm=fit&q=100",
-      "quanty": 1
+      "quanty": 1,
+      "description": "Figura coleccionable"
+      
     },
+
     {
       "id": 2,
       "name": "Mago Oscuro",
@@ -18,7 +21,7 @@
   
     {
       "id": 3,
-      "name": "Squirtle",
+      "name": "Squirtle Pokémon",
       "marca": "Pokémon",
       "price": 59,
       "img": "https://images-na.ssl-images-amazon.com/images/I/81mkIehOztL._AC_UL200_SR200,200_.jpg",
@@ -26,7 +29,7 @@
     },
     {
       "id": 4,
-      "name": "bakura",
+      "name": "lucario Pokémon",
       "marca": "Allen Ginsberg",
       "price": 18,
       "img": "https://images-na.ssl-images-amazon.com/images/I/71hNVK-BOaL._AC_UL200_SR200,200_.jpg",
@@ -38,7 +41,7 @@
       "name": "marik",
       "marca": "Allen Ginsberg",
       "price": 18,
-      "img": "https://images-na.ssl-images-amazon.com/images/I/71hNVK-BOaL._AC_UL200_SR200,200_.jpg",
+      "img": "https://images.bigbadtoystore.com/images/p/thumb/2024/02/ef784a83-ab97-4064-973c-16522d8027e5.png",
       "quanty": 1
     },
 
@@ -47,7 +50,7 @@
       "name": "yugi",
       "marca": "Allen Ginsberg",
       "price": 18,
-      "img": "https://images-na.ssl-images-amazon.com/images/I/71hNVK-BOaL._AC_UL200_SR200,200_.jpg",
+      "img": "https://d3fa68hw0m2vcc.cloudfront.net/d81/282786725.jpeg",
       "quanty": 1
     },
 

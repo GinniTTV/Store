@@ -35,6 +35,7 @@ const Products = () => {
                     <img src={product.img} alt='img-product-card' />
                     <h3>{product.name}</h3>
                     <h4>{product.price}$</h4>
+                    <p>{product.description}</p> 
                     <button onClick={() => handleAddToCart(product)}>Comprar</button>
                     {cart.some(item => item.id === product.id) ? (
                         <div className="quantity-buttons">
