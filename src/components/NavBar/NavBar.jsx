@@ -20,8 +20,8 @@ const NavBar = () => {
             <ul className='nav-links'>
                 <li><Link to="/" className='nav-link'>Inicio</Link></li>
                 <li><Link to="/alta" className='nav-link'>Alta</Link></li>
-                <li><Link to="/contacto" className='nav-link'>Contacto</Link></li>
-                <li><Link to="/nosotros" className='nav-link'>Nosotros</Link></li>
+                <li><Link to="/contacto" className='nav-link'>contacto</Link></li>
+                <li><Link to="/nosotros" className='nav-link'>nosotros</Link></li>
             </ul>
             <button className='cart-link' onClick={openModal}>
             <img src={process.env.PUBLIC_URL + '/assets/Icons/add-cart-wv.png'} alt="Carrito de compras" />

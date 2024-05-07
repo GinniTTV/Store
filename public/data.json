@@ -16,78 +16,87 @@
       "marca": "Yu-Gi-Oh!",
       "price": 150,
       "img": "https://d3fa68hw0m2vcc.cloudfront.net/d9f/254702918.jpeg",
-      "quanty": 1
+      "quanty": 1,
+      "description": "Figura coleccionable"
     },
   
     {
       "id": 3,
       "name": "Squirtle Pokémon",
       "marca": "Pokémon",
-      "price": 59,
+      "price": 30,
       "img": "https://images-na.ssl-images-amazon.com/images/I/81mkIehOztL._AC_UL200_SR200,200_.jpg",
-      "quanty": 1
+      "quanty": 1,
+      "description": "Peluche adorable"
     },
     {
       "id": 4,
       "name": "lucario Pokémon",
-      "marca": "Allen Ginsberg",
-      "price": 18,
+      "marca": "Pokémon",
+      "price": 30,
       "img": "https://images-na.ssl-images-amazon.com/images/I/71hNVK-BOaL._AC_UL200_SR200,200_.jpg",
-      "quanty": 1
+      "quanty": 1,
+      "description": "Peluche Lucario"
     },
 
     {
       "id": 5,
-      "name": "marik",
-      "marca": "Allen Ginsberg",
-      "price": 18,
+      "name": "Soldado del brillo",
+      "marca": "Yu-Gi-Oh!",
+      "price": 75,
       "img": "https://images.bigbadtoystore.com/images/p/thumb/2024/02/ef784a83-ab97-4064-973c-16522d8027e5.png",
-      "quanty": 1
+      "quanty": 1,
+      "description": "Figuras coleccionable"
     },
 
     {
       "id": 6,
-      "name": "yugi",
-      "marca": "Allen Ginsberg",
-      "price": 18,
-      "img": "https://d3fa68hw0m2vcc.cloudfront.net/d81/282786725.jpeg",
-      "quanty": 1
+      "name": "Auto",
+      "marca": "Hot Wheels",
+      "price": 20,
+      "img": "https://media.takealot.com/covers_images/3f62ca410d834348ba09148874c02b59/s-fb.file",
+      "quanty": 1,
+      "description": "Edición especial"
     },
 
     {
       "id": 7,
-      "name": "pegasus",
-      "marca": "Allen Ginsberg",
-      "price": 18,
-      "img": "https://images-na.ssl-images-amazon.com/images/I/71hNVK-BOaL._AC_UL200_SR200,200_.jpg",
-      "quanty": 1
+      "name": "Auto",
+      "marca": "Hot Wheels",
+      "price": 20,
+      "img": "https://media.takealot.com/covers_images/19dcec6922d44439b889e9c798941c86/s-fb.file",
+      "quanty": 1,
+      "description": "Edición especial"
     },
 
     {
       "id": 8,
-      "name": "mokuba",
-      "marca": "Allen Ginsberg",
-      "price": 18,
-      "img": "https://images-na.ssl-images-amazon.com/images/I/71hNVK-BOaL._AC_UL200_SR200,200_.jpg",
-      "quanty": 1
+      "name": "King Kong",
+      "marca": "King vs Gotzilla",
+      "price": 35,
+      "img": "https://unicornpunkboi.com/cdn/shop/files/GodzillaxKongTheNewEmpireKongwithB.E.A.S.TGlove_200x.jpg?v=1707568720",
+      "quanty": 1,
+      "description": "Figura de acción"
     },
 
     {
       "id": 9,
-      "name": "mai",
-      "marca": "Allen Ginsberg",
-      "price": 18,
-      "img": "https://images-na.ssl-images-amazon.com/images/I/71hNVK-BOaL._AC_UL200_SR200,200_.jpg",
-      "quanty": 1
+      "name": "Batimóvil",
+      "marca": "DC",
+      "price": 35,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/41K4fwPgb9L._AC_UL200_SR200,200_.jpg",
+      "quanty": 1,
+      "description": "Figura coleccionable"
     },
 
     {
       "id": 10,
-      "name": "anzu",
-      "marca": "Allen Ginsberg",
-      "price": 18,
-      "img": "https://images-na.ssl-images-amazon.com/images/I/71hNVK-BOaL._AC_UL200_SR200,200_.jpg",
-      "quanty": 1
+      "name": "Sonic- Knuckles",
+      "marca": "Sonic Dream",
+      "price": 30,
+      "img": "https://images-eu.ssl-images-amazon.com/images/I/61TfRDldYgL._AC_UL200_SR200,200_.jpg",
+      "quanty": 1,
+      "description": "Peluche de Sonic"
     }
 
 ]   

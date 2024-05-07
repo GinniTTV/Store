@@ -115,10 +115,10 @@
 }
 
 .pay-button {
-    background-color: #28a745; /* Color de fondo del botón Pagar */
+    background-color: #3fef68; /* Color de fondo del botón Pagar */
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 8px 18px;
     border-radius: 20px; /* Borde redondeado del botón Pagar */
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -127,13 +127,15 @@
 }
 
 .pay-button:hover {
-    background-color: #218838; /* Color de fondo del botón Pagar al pasar el mouse */
+    background-color: #299e43; /* Color de fondo del botón Pagar al pasar el mouse */
 }
 
 .close {
-    color: #aaa;
-    font-size: 28px;
+    color: #444343;
+    font-size: 15px;
+    border-radius: 30px;
     font-weight: bold;
+    border: none;
     cursor: pointer;
     margin-top: 20px; /* Espacio antes del botón Cerrar */
 }

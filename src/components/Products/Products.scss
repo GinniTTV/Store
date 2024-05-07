@@ -5,11 +5,16 @@
     margin-bottom: 20px; /* Agregamos un margen inferior para separar los productos del carrito */
 }
 
+.product-wrapper {
+    position: relative; /* Contenedor relativo para posicionar el mensaje */
+}
+
 .card {
+    background-color: #f8f7f7ae;
     width: 200px;
     margin: 10px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #ffefef;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.1s ease-in-out;
@@ -37,12 +42,12 @@
     h4 {
         font-size: 1.1rem;
         font-weight: bold;
-        color: #007bff;
+        color: #120effd2;
         margin-bottom: 5px;
     }
 
     button {
-        background-color: #28a745;
+        background-color: #631cf1;
         color: #fff;
         border: none;
         padding: 8px 16px;
@@ -51,7 +56,7 @@
         transition: background-color 0.3s ease;
 
         &:hover {
-            background-color: #218838;
+            background-color: #694dcd;
         }
     }
 
@@ -59,9 +64,10 @@
         display: flex;
         justify-content: space-between;
         margin-top: 10px;
+        gap: 10px;
 
         button {
-            background-color: #007bff;
+            background-color: #308894;
             color: #fff;
             border: none;
             padding: 8px 12px;
@@ -70,7 +76,7 @@
             transition: background-color 0.3s ease;
 
             &:hover {
-                background-color: #0056b3;
+                background-color: #004163;
             }
         }
     }
@@ -90,5 +96,44 @@
         color: #333;
         text-align: center; // Centrar el texto
         margin-bottom: 10px; // Agregar un espacio inferior
+    }
+
+    &.selected {
+        // Estilos para la carta seleccionada
+        border-color: #007bff; // Cambiar el color del borde
+    }
+}
+
+// Estilos para el mensaje de carrito
+.cart-message {
+    position: absolute; // Posición absoluta para superponer el mensaje
+    top: -20px; // Desplazar el mensaje hacia arriba
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 0, 0, 0.8); // Color de fondo del mensaje por defecto (producto ya en carrito)
+    color: #fff; // Color del texto por defecto (blanco)
+    padding: 10px; // Espaciado interno
+    border-radius: 5px; // Borde redondeado
+    text-align: center; // Centrar el texto
+    z-index: 1; // Asegurar que el mensaje esté sobre la carta
+    animation: slide-down 0.5s ease forwards; // Animación de deslizamiento hacia abajo por defecto
+}
+
+.added-to-cart {
+    background-color: rgba(0, 128, 0, 0.8); // Color de fondo del mensaje de producto añadido al carrito
+}
+
+.product-already-in-cart {
+    background-color: rgba(255, 165, 0, 0.8); // Color de fondo del mensaje de producto ya en el carrito
+}
+
+@keyframes slide-down {
+    from {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
