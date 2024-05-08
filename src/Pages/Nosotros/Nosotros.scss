@@ -2,16 +2,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: calc(100vh - 80px); /* Ajustar según el tamaño de la navbar */
+  margin-top: 20px; /* Margen superior para separar de la navbar */
+  margin-bottom: 20px; /* Margen inferior para separar del footer */
+   /* Color de fondo para la sección */
 }
 
 .nosotros-container {
   max-width: 800px;
   padding: 20px;
   text-align: center;
-  background-color: #f8f9fa;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+}
+
+.banner-img {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 20px;
 }
 
 .nosotros-container h2 {
@@ -39,4 +48,26 @@
 
 .section-container:last-child {
   margin-bottom: 0;
+}
+
+.estanteria-img {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+.thanks-message {
+  margin-top: 30px;
+  color: #28a745;
+}
+
+.thanks-message h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.thanks-message p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }

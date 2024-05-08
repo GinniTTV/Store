@@ -3,7 +3,7 @@
       "id": 1,
       "name": "Dragón Blanco",
       "marca": "Yu-Gi-Oh!",
-      "price": 250,
+      "price": 190,
       "img": "https://store.crunchyroll.com/dw/image/v2/BDGC_PRD/on/demandware.static/-/Sites-crunchyroll-master-catalog/default/dwfa80c8a4/images/4983164893687_yu-gi-oh-duel-monsters-blue-eyes-white-dragon-prize-figure_1.jpg?sw=200&sh=200&sm=fit&q=100",
       "quanty": 1,
       "description": "Figura coleccionable"
@@ -14,7 +14,7 @@
       "id": 2,
       "name": "Mago Oscuro",
       "marca": "Yu-Gi-Oh!",
-      "price": 150,
+      "price": 100,
       "img": "https://d3fa68hw0m2vcc.cloudfront.net/d9f/254702918.jpeg",
       "quanty": 1,
       "description": "Figura coleccionable"
@@ -24,7 +24,7 @@
       "id": 3,
       "name": "Squirtle Pokémon",
       "marca": "Pokémon",
-      "price": 30,
+      "price": 17,
       "img": "https://images-na.ssl-images-amazon.com/images/I/81mkIehOztL._AC_UL200_SR200,200_.jpg",
       "quanty": 1,
       "description": "Peluche adorable"
@@ -33,7 +33,7 @@
       "id": 4,
       "name": "lucario Pokémon",
       "marca": "Pokémon",
-      "price": 30,
+      "price": 20,
       "img": "https://images-na.ssl-images-amazon.com/images/I/71hNVK-BOaL._AC_UL200_SR200,200_.jpg",
       "quanty": 1,
       "description": "Peluche Lucario"
@@ -53,7 +53,7 @@
       "id": 6,
       "name": "Auto",
       "marca": "Hot Wheels",
-      "price": 20,
+      "price": 10,
       "img": "https://media.takealot.com/covers_images/3f62ca410d834348ba09148874c02b59/s-fb.file",
       "quanty": 1,
       "description": "Edición especial"
@@ -63,7 +63,7 @@
       "id": 7,
       "name": "Auto",
       "marca": "Hot Wheels",
-      "price": 20,
+      "price": 10,
       "img": "https://media.takealot.com/covers_images/19dcec6922d44439b889e9c798941c86/s-fb.file",
       "quanty": 1,
       "description": "Edición especial"
@@ -71,19 +71,19 @@
 
     {
       "id": 8,
-      "name": "King Kong",
-      "marca": "King vs Gotzilla",
-      "price": 35,
-      "img": "https://unicornpunkboi.com/cdn/shop/files/GodzillaxKongTheNewEmpireKongwithB.E.A.S.TGlove_200x.jpg?v=1707568720",
+      "name": "Kit beach",
+      "marca": "KB",
+      "price": 13,
+      "img": "https://www.tradeinn.com/l/14058/140581975/cb-toys-camion-set-playa-y-cubo-con-accesorios-color-beach.jpg",
       "quanty": 1,
-      "description": "Figura de acción"
+      "description": "juguetes de playa"
     },
 
     {
       "id": 9,
       "name": "Batimóvil",
       "marca": "DC",
-      "price": 35,
+      "price": 30,
       "img": "https://images-na.ssl-images-amazon.com/images/I/41K4fwPgb9L._AC_UL200_SR200,200_.jpg",
       "quanty": 1,
       "description": "Figura coleccionable"
@@ -93,7 +93,7 @@
       "id": 10,
       "name": "Sonic- Knuckles",
       "marca": "Sonic Dream",
-      "price": 30,
+      "price": 25,
       "img": "https://images-eu.ssl-images-amazon.com/images/I/61TfRDldYgL._AC_UL200_SR200,200_.jpg",
       "quanty": 1,
       "description": "Peluche de Sonic"
