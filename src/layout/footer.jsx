@@ -25,11 +25,21 @@ const Footer = () => {
             </li>
           </ul>
         </div>
+        <div className="payment-methods">
+          <h3>Métodos de Pago</h3>
+          <div className="payment-icons">
+            <img src="/assets/Icons/visa.png" alt="Visa" />
+            <img src="/assets/Icons/mastercard.png" alt="Mastercard" />
+            <img src="/assets/Icons/maestro.png" alt="Maestro" />
+            <img src="/assets/Icons/americanExpress.png" alt="American Express" />
+            <img src="/assets/Icons/PayPal.png" alt="PayPal" />
+          </div>
+        </div>
         <div className="contact-info">
           <h3>Oficinas</h3>
           <p>+34 621 29 49 75 (SOLO/ONLY WHATSAPP)</p>
           <p><a href="mailto:info@cosmic.toy.store.com">info@toyland.store.com</a></p>
-          <p>Global Freaks</p>
+          <p>Toyland</p>
           <p>C/ Gran Bretaña 35-36, Nave 1-A</p>
           <p>07700 Igualada, Barcelona, España</p>
         </div>

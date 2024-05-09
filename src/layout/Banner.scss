@@ -4,11 +4,12 @@
   justify-content: center;
   align-items: center;
   overflow: hidden; // Oculta el desbordamiento para evitar problemas con el video
+  margin-bottom: 25px; // Agregar margen inferior de 20px al banner
 
   video {
-    
     height: 150%;
     object-fit: cover;
+    
   }
 
   .banner-container {
