@@ -1,0 +1,19 @@
+.banner {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; 
+  margin-bottom: 25px; 
+
+  video {
+    height: 150%;
+    object-fit: cover;
+    
+  }
+
+  .banner-container {
+    padding-bottom: 10vh; 
+    text-align: center;
+  }
+}

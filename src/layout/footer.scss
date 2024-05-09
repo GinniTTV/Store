@@ -1,0 +1,58 @@
+.footer {
+  background-color: #f8f8f8;
+  padding: 50px 0;
+  margin-top: 9%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.social-links,
+.contact-info,
+.payment-methods {
+  flex: 1;
+  margin-bottom: 20px; 
+}
+
+.social-links h3,
+.payment-methods h3 {
+  margin-bottom: 10px; 
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons li {
+  margin-right: 10px;
+}
+
+.social-icons li img {
+  width: 26px; 
+  height: 26px;
+}
+
+.payment-icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.payment-icons img {
+  width: 56px; 
+  height: auto;
+  margin-right: 10px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
