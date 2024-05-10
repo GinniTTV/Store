@@ -10,7 +10,7 @@ const AltaProducto = () => {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'x-api-key': 'Proyect-mine', // Tu API key aquí
+                'x-api-key': 'Proyect-mine',
             },
             body: JSON.stringify(formData),
         })
