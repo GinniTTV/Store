@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
-import Footer from './layout/footer'; // Asegúrate de tener la ruta correcta para importar Footer
+import Footer from './layout/footer'; 
 import Home from './Pages/Home/Home';
 import Alta from './Pages/Alta/Alta';
 import Contacto from './Pages/Contacto/contacto';

@@ -1,0 +1,19 @@
+{
+    "builds": [
+      {
+        "src": "package.json",
+        "use": "@vercel/static-build"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/videos/(.*)",
+        "dest": "/public/videos/$1"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/$1"
+      }
+    ]
+  }
+  

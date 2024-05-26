@@ -21,7 +21,7 @@ const Contacto = () => {
         })
         .then((data) => {
             console.log('Respuesta de la API:', data);
-            alert('Formulario enviado con éxito.'); // Puedes mostrar un mensaje de éxito
+            alert('Formulario enviado con éxito.'); // mensaje de éxito
             window.location.reload(); // Refrescar la página después del envío exitoso
         })
         .catch((error) => {
