@@ -5,7 +5,7 @@ const Banner = () => {
   return (
     <div className="banner">
       <video autoPlay loop muted playsInline>
-        <source src="/assets/icons/ToyLand.mp4" type="video/mp4" />
+        <source src="/videos/ToyLand.mp4" type="video/mp4" />
        
       </video>
       <div className="banner-container">
