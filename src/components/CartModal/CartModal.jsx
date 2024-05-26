@@ -58,7 +58,7 @@ const CartModal = ({ closeModal }) => {
                                 </div>
                             ))}
                         </div>
-                        <CartTotal total={total} /> {/* Aquí se usa el componente CartTotal */}
+                        <CartTotal total={total} /> {}
                         <button className="pay-button" onClick={handlePurchase}>Pagar</button>
                         <button className="close" onClick={closeModal}>Cerrar</button>
 

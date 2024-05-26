@@ -1,12 +1,27 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import { DataContext } from '../../Context/DataContext';
+import { getProducts } from '../../Api'; 
 import './Products.scss';
 
 const Products = () => {
-    const { data, cart, setCart } = useContext(DataContext);
+    const { cart, setCart } = useContext(DataContext);
+    const [products, setProducts] = useState([]);
     const [showAddedToCartMessage, setShowAddedToCartMessage] = useState(false); 
     const [showProductAlreadyInCartMessage, setShowProductAlreadyInCartMessage] = useState(false); 
     const [selectedProduct, setSelectedProduct] = useState(null); 
+
+    useEffect(() => {
+        const fetchProducts = async () => {
+            try {
+                const productsData = await getProducts();
+                setProducts(productsData);
+            } catch (error) {
+                console.error("Error fetching products:", error);
+            }
+        };
+
+        fetchProducts();
+    }, []);
 
     const handleAddToCart = (product) => {
         const existingItem = cart.find((item) => item.id === product.id);
@@ -44,9 +59,9 @@ const Products = () => {
 
     return (
         <div className="product-list">
-            {data.map((product) => (
-                <div className="product-wrapper" key={product.id}>
-                    <div className={`card ${selectedProduct && selectedProduct.id === product.id ? 'selected' : ''}`}>
+            {products.map((product) => (
+                <div className="product-wrapper" key={product._id}>
+                    <div className={`card ${selectedProduct && selectedProduct._id === product._id ? 'selected' : ''}`}>
                         <img src={product.img} alt='img-product-card' />
                         <h3>{product.name}</h3>
                         <h4>{product.price}$</h4>
@@ -59,13 +74,12 @@ const Products = () => {
                             </div>
                         ) : null}
                     </div>
-                    {/* Mostrar el mensaje cuando se agrega un producto al carrito */}
-                    {showAddedToCartMessage && selectedProduct && selectedProduct.id === product.id && (
+                    {showAddedToCartMessage && selectedProduct && selectedProduct._id === product._id && (
                         <div className="cart-message added-to-cart">
                             Producto añadido al carrito
                         </div>
                     )}
-                    {showProductAlreadyInCartMessage && selectedProduct && selectedProduct.id === product.id && (
+                    {showProductAlreadyInCartMessage && selectedProduct && selectedProduct._id === product._id && (
                         <div className="cart-message product-already-in-cart">
                             Este producto ya está en el carrito
                         </div>
@@ -77,3 +91,4 @@ const Products = () => {
 };
 
 export default Products;
+
