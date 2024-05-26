@@ -1,27 +1,25 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { DataContext } from '../../Context/DataContext';
-import { getProducts } from '../../Api'; 
 import './Products.scss';
+import { getProducts } from '../../Api'; // Asegúrate de que la ruta sea correcta
 
 const Products = () => {
-    const { cart, setCart } = useContext(DataContext);
-    const [products, setProducts] = useState([]);
+    const { data, setData, cart, setCart } = useContext(DataContext); // Asegúrate de que `setData` esté disponible en el contexto
     const [showAddedToCartMessage, setShowAddedToCartMessage] = useState(false); 
     const [showProductAlreadyInCartMessage, setShowProductAlreadyInCartMessage] = useState(false); 
     const [selectedProduct, setSelectedProduct] = useState(null); 
 
     useEffect(() => {
-        const fetchProducts = async () => {
+        const fetchData = async () => {
             try {
-                const productsData = await getProducts();
-                setProducts(productsData);
+                const result = await getProducts();
+                setData(result);
             } catch (error) {
                 console.error("Error fetching products:", error);
             }
         };
-
-        fetchProducts();
-    }, []);
+        fetchData();
+    }, [setData]);
 
     const handleAddToCart = (product) => {
         const existingItem = cart.find((item) => item.id === product.id);
@@ -59,9 +57,9 @@ const Products = () => {
 
     return (
         <div className="product-list">
-            {products.map((product) => (
-                <div className="product-wrapper" key={product._id}>
-                    <div className={`card ${selectedProduct && selectedProduct._id === product._id ? 'selected' : ''}`}>
+            {data.map((product) => (
+                <div className="product-wrapper" key={product.id}>
+                    <div className={`card ${selectedProduct && selectedProduct.id === product.id ? 'selected' : ''}`}>
                         <img src={product.img} alt='img-product-card' />
                         <h3>{product.name}</h3>
                         <h4>{product.price}$</h4>
@@ -74,12 +72,12 @@ const Products = () => {
                             </div>
                         ) : null}
                     </div>
-                    {showAddedToCartMessage && selectedProduct && selectedProduct._id === product._id && (
+                    {showAddedToCartMessage && selectedProduct && selectedProduct.id === product.id && (
                         <div className="cart-message added-to-cart">
                             Producto añadido al carrito
                         </div>
                     )}
-                    {showProductAlreadyInCartMessage && selectedProduct && selectedProduct._id === product._id && (
+                    {showProductAlreadyInCartMessage && selectedProduct && selectedProduct.id === product.id && (
                         <div className="cart-message product-already-in-cart">
                             Este producto ya está en el carrito
                         </div>
@@ -91,4 +89,3 @@ const Products = () => {
 };
 
 export default Products;
-
