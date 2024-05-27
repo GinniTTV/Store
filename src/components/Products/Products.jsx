@@ -1,25 +1,12 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useContext, useState } from 'react';
 import { DataContext } from '../../Context/DataContext';
 import './Products.scss';
-import { getProducts } from '../../Api'; // Asegúrate de que la ruta sea correcta
 
 const Products = () => {
-    const { data, setData, cart, setCart } = useContext(DataContext); // Asegúrate de que `setData` esté disponible en el contexto
+    const { data, cart, setCart } = useContext(DataContext);
     const [showAddedToCartMessage, setShowAddedToCartMessage] = useState(false); 
     const [showProductAlreadyInCartMessage, setShowProductAlreadyInCartMessage] = useState(false); 
     const [selectedProduct, setSelectedProduct] = useState(null); 
-
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const result = await getProducts();
-                setData(result);
-            } catch (error) {
-                console.error("Error fetching products:", error);
-            }
-        };
-        fetchData();
-    }, [setData]);
 
     const handleAddToCart = (product) => {
         const existingItem = cart.find((item) => item.id === product.id);
