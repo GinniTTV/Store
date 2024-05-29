@@ -1,22 +1,14 @@
 import React, { createContext, useState, useEffect } from 'react';
-import { getProducts } from '../Api';
+import axios from 'axios';
 
-export const DataContext = createContext();
+const DataContext = createContext();
 
-export const DataProvider = ({ children }) => {
+const DataProvider = ({ children }) => {
     const [data, setData] = useState([]);
     const [cart, setCart] = useState([]);
 
     useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const products = await getProducts();
-                setData(products);
-            } catch (error) {
-                console.error("Error fetching products:", error);
-            }
-        };
-        fetchData();
+        axios("data.json").then((res) => setData(res.data));
     }, []);
 
     return (
@@ -25,5 +17,7 @@ export const DataProvider = ({ children }) => {
         </DataContext.Provider>
     );
 };
+
+export { DataContext, DataProvider };
 
 
